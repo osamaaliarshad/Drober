@@ -1,3 +1,5 @@
+import 'package:drober_app/screens/tabs/stats_tab.dart';
+import 'package:drober_app/screens/tabs/styles_tab.dart';
 import 'package:drober_app/screens/tabs/wardrobe_tab.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -17,10 +19,8 @@ class _WardrobeScreenState extends State<WardrobeScreen> {
   final tabs = [
     createOutfit(),
     createCloset(),
-    Center(
-        child: Text(
-            'Different styles shown here with how your wardrobe can be accomodated to fit each style')),
-    Center(child: Text('Statistics based on how often you wear what youw wear'))
+    createStyles(),
+    createStats(),
   ];
 
   @override

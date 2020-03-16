@@ -35,7 +35,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   ),
                   Container(
                     height: 150.0,
-                    child: Image.asset('assets/droberLogo11.png'),
+                    child: Image.asset('assets/droberLogo.png'),
                   ),
                 ],
               ),

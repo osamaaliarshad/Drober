@@ -18,13 +18,16 @@ Widget createOutfit() {
                 Text(
                   formatted,
                   style: TextStyle(
-                    fontSize: 20.0,
-                    fontFamily: 'Baloo',
+                    fontSize: 18.0,
+                    //fontFamily: 'Baloo',
                   ),
                 ),
                 Text(
                   '60° F',
-                  style: TextStyle(fontSize: 15.0, fontFamily: 'Baloo'),
+                  style: TextStyle(
+                    fontSize: 13.0,
+                    //fontFamily: 'Baloo'
+                  ),
                 ),
               ],
             ),
