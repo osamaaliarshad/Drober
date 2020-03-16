@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "309797229388",
+    "firebase_url": "https://drober-f3501.firebaseio.com",
+    "project_id": "drober-f3501",
+    "storage_bucket": "drober-f3501.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309797229388:android:083cb5d4b13623d89775e9",
+        "android_client_info": {
+          "package_name": "com.drober.drober_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309797229388-k6ng3qae7q446agrucm5riqms7injt9q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCb4hIi5sGGJZxIVfaIZWweJ2NwU60RsZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309797229388-k6ng3qae7q446agrucm5riqms7injt9q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
