@@ -1,3 +1,4 @@
+import 'package:drober_app/screens/tabs/wardrobe_tab.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:drober_app/screens/tabs/home_tab.dart';
@@ -15,8 +16,7 @@ class _WardrobeScreenState extends State<WardrobeScreen> {
 
   final tabs = [
     createOutfit(),
-    Center(
-        child: Text('This is where the entire section of clothes will be put')),
+    createCloset(),
     Center(
         child: Text(
             'Different styles shown here with how your wardrobe can be accomodated to fit each style')),
@@ -49,7 +49,9 @@ class _WardrobeScreenState extends State<WardrobeScreen> {
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.settings),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, 'settings_screen');
+            },
           )
         ],
         title: Text(

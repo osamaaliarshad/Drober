@@ -1,5 +1,6 @@
 import 'package:drober_app/screens/login_screen.dart';
 import 'package:drober_app/screens/registration_screen.dart';
+import 'package:drober_app/screens/settings_screen.dart';
 import 'package:drober_app/screens/wardrobe_home_screen.dart';
 import 'package:drober_app/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         LoginScreen.id: (context) => LoginScreen(),
         RegistrationScreen.id: (context) => RegistrationScreen(),
         WelcomeScreen.id: (context) => WelcomeScreen(),
+        SettingsScreen.id: (context) => SettingsScreen(),
       },
     );
   }

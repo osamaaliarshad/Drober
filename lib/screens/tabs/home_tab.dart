@@ -5,6 +5,7 @@ Widget createOutfit() {
   String formatted = DateFormat('MMMEd').format(DateTime.now());
 
   return Column(
+    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
     children: <Widget>[
       Row(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -27,54 +28,52 @@ Widget createOutfit() {
                 ),
               ],
             ),
-          )
+          ),
         ],
       ),
       Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
-          Padding(
-            padding: EdgeInsets.all(10.0),
+          Expanded(
             child: Card(
               child: Image.asset(
                 'assets/hoodie_black.png',
-                height: 200.0,
+                // height: 200.0,
               ),
             ),
           ),
-          Padding(
-            padding: EdgeInsets.all(10.0),
+          Expanded(
             child: Card(
               child: Image.asset(
                 'assets/t-shirt_black.png',
-                height: 200.0,
+                //height: 200.0,
               ),
             ),
           ),
         ],
       ),
-      Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Padding(
-            padding: EdgeInsets.all(10.0),
-            child: Card(
-              child: Image.asset(
-                'assets/jeans_black.png',
-                height: 200.0,
+      Expanded(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Expanded(
+              child: Card(
+                child: Image.asset(
+                  'assets/jeans_black.png',
+                  //height: 200.0,
+                ),
               ),
             ),
-          ),
-          Padding(
-            padding: EdgeInsets.all(10.0),
-            child: Card(
-              child: Image.asset(
-                'assets/slip-onsneaker_black.png',
-                width: 200.0,
+            Expanded(
+              child: Card(
+                child: Image.asset(
+                  'assets/slip-onsneaker_black.png',
+                  //width: 200.0,
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     ],
   );
