@@ -1,6 +1,6 @@
-# drober_app
+# Drobe
 
-A wardrobe organization app for men.
+A personal wardrobe organization app targeted for men.
 
 ## Getting Started
 
