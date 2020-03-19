@@ -20,5 +20,7 @@ Widget myFabButton = Container(
 Widget createCloset() {
   return Scaffold(
     floatingActionButton: myFabButton,
+    body: Center(
+        child: Text('Not sure how to display collection of all clothing ')),
   );
 }

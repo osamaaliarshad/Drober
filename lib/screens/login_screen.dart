@@ -31,11 +31,11 @@ class _LoginScreenState extends State<LoginScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   SizedBox(
-                    width: 50.0,
+                    width: 33.0,
                   ),
                   Container(
                     height: 150.0,
-                    child: Image.asset('assets/droberLogo.png'),
+                    child: Image.asset('assets/droberLogo17.png'),
                   ),
                 ],
               ),
@@ -51,8 +51,6 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
               TextField(
-                decoration:
-                    kTextFieldDecoration.copyWith(hintText: 'Enter your email'),
                 keyboardType: TextInputType.emailAddress,
                 textAlign: TextAlign.center,
                 onChanged: (value) {
@@ -64,17 +62,6 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               TextField(
                 obscureText: true,
-                decoration: kTextFieldDecoration.copyWith(
-                  hintText: 'Enter your password',
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.blue, width: 1.0),
-                    borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.blue, width: 2.0),
-                    borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                  ),
-                ),
                 textAlign: TextAlign.center,
                 onChanged: (value) {
                   password = value;
@@ -103,6 +90,14 @@ class _LoginScreenState extends State<LoginScreen> {
                   } catch (e) {
                     print(e);
                   }
+                },
+              ),
+              RoundedButton(
+                title: 'Register',
+                colour: Colors.cyan,
+                onPressed: () {
+                  Navigator.pushReplacementNamed(
+                      context, 'registration_screen');
                 },
               ),
             ],

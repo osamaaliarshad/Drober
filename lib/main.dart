@@ -2,7 +2,6 @@ import 'package:drober_app/screens/login_screen.dart';
 import 'package:drober_app/screens/registration_screen.dart';
 import 'package:drober_app/screens/settings_screen.dart';
 import 'package:drober_app/screens/wardrobe_home_screen.dart';
-import 'package:drober_app/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -20,12 +19,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
-      initialRoute: WardrobeScreen.id,
+      initialRoute: LoginScreen.id,
       routes: {
-        WardrobeScreen.id: (context) => WardrobeScreen(),
         LoginScreen.id: (context) => LoginScreen(),
+        WardrobeScreen.id: (context) => WardrobeScreen(),
         RegistrationScreen.id: (context) => RegistrationScreen(),
-        WelcomeScreen.id: (context) => WelcomeScreen(),
         SettingsScreen.id: (context) => SettingsScreen(),
       },
     );

@@ -1,25 +1,20 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'dart:ui';
 
-Widget createStyles() {
+Widget createGuide() {
   return Scaffold(
     body: GridView.count(
-      crossAxisCount: 2,
+      crossAxisCount: 1,
       children: <Widget>[
-        createStyleCard('Streetwear', 'streetwear.png'),
-        createStyleCard('Formal', 'formal.png'),
-        createStyleCard('Minimalism', 'minimalism.png'),
-        createStyleCard('Palewave', 'palewave.png'),
-        createStyleCard('Americana', 'americana.png'),
-        createStyleCard('Saint Laurent-Paris', 'saintlaurent.png'),
-        createStyleCard('Business Casual', 'businesscasual.png'),
-        createStyleCard('More coming soon', 'more.png'),
+        createGuideCard('How should clothes fit', 'guide1.jpg'),
+        createGuideCard('How to match with your skin tone', 'guide2.jpg'),
+        createGuideCard('More Guides soon', ''),
       ],
     ),
   );
 }
 
-Card createStyleCard(String style, String image) {
+Card createGuideCard(String style, String image) {
   return Card(
     semanticContainer: true,
     clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -44,12 +39,12 @@ Card createStyleCard(String style, String image) {
             filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
             child: Container(
               alignment: Alignment.center,
-              color: Colors.grey.withOpacity(0.3),
+              color: Colors.grey.withOpacity(0.5),
               child: Text(
                 style,
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 20.0,
+                  fontSize: 30.0,
                 ),
               ),
             ),
