@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:drober_app/constants.dart';
 import 'package:drober_app/components/rounded_button.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
@@ -38,9 +37,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: Image.asset('assets/droberLogo17.png'),
                   ),
                 ],
-              ),
+              ), //drober logo
               SizedBox(
-                height: 80.0,
+                height: 50.0,
                 child: Text(
                   'Drober',
                   textAlign: TextAlign.center,
@@ -49,27 +48,38 @@ class _LoginScreenState extends State<LoginScreen> {
                     fontSize: 30.0,
                   ),
                 ),
-              ),
+              ), //drober text
+              SizedBox(
+                height: 47.0,
+                child: Text(
+                  'Dress faster. Dress smarter.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      fontFamily: 'Josefin',
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold),
+                ),
+              ), //dress faster dress smarter text
               TextField(
                 keyboardType: TextInputType.emailAddress,
                 textAlign: TextAlign.center,
                 onChanged: (value) {
                   email = value;
                 },
-              ),
+              ), //email address text field
               SizedBox(
                 height: 10.0,
-              ),
+              ), //spacer between email and password fields
               TextField(
                 obscureText: true,
                 textAlign: TextAlign.center,
                 onChanged: (value) {
                   password = value;
                 },
-              ),
+              ), //password field
               SizedBox(
                 height: 20.0,
-              ),
+              ), // space between field and buttons
               RoundedButton(
                 title: 'Login',
                 colour: Colors.blue,
@@ -91,7 +101,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     print(e);
                   }
                 },
-              ),
+              ), //login button
               RoundedButton(
                 title: 'Register',
                 colour: Colors.cyan,
@@ -99,7 +109,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   Navigator.pushReplacementNamed(
                       context, 'registration_screen');
                 },
-              ),
+              ), //register button
             ],
           ),
         ),
