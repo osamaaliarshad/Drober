@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:flutter_weather_icons/flutter_weather_icons.dart';
 
 Widget createOutfit() {
   String formatted = DateFormat('MMMEd').format(DateTime.now());
@@ -8,8 +9,11 @@ Widget createOutfit() {
     child: Column(
       children: <Widget>[
         Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
+            Container(
+              padding: EdgeInsets.symmetric(horizontal: 25.0),
+            ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Column(
@@ -23,17 +27,27 @@ Widget createOutfit() {
                           //fontFamily: 'Baloo',
                         ),
                       ),
-                      Text(
-                        '60° F',
-                        style: TextStyle(
-                          fontSize: 13.0,
-                          //fontFamily: 'Baloo'
-                        ),
-                      ),
                     ],
                   ),
                 ],
               ),
+            ),
+            Column(
+              children: <Widget>[
+                IconButton(
+                  onPressed: () {
+                    print('weather button pressed');
+                  },
+                  icon: Icon(WeatherIcons.wiDaySunny),
+                ),
+                Text(
+                  '60° F',
+                  style: TextStyle(
+                    fontSize: 13.0,
+                    //fontFamily: 'Baloo'
+                  ),
+                ),
+              ],
             ),
           ],
         ),
