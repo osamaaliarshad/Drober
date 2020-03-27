@@ -19,10 +19,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
-      initialRoute: LoginScreen.id,
+      initialRoute: WardrobeScreen.id,
       routes: {
-        LoginScreen.id: (context) => LoginScreen(),
         WardrobeScreen.id: (context) => WardrobeScreen(),
+        LoginScreen.id: (context) => LoginScreen(),
         RegistrationScreen.id: (context) => RegistrationScreen(),
         SettingsScreen.id: (context) => SettingsScreen(),
       },

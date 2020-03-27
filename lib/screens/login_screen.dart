@@ -75,7 +75,7 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-  Widget _buildForgotPasswordBtn() {
+  Widget _buildCreateAccAndForgotPasswordBtn() {
     return Row(
       children: <Widget>[
         Container(
@@ -191,15 +191,15 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
+//    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+//        systemNavigationBarColor: Color(0xFF73AEF5),
+//        statusBarColor: Color(0xFF398AE5),
+//        statusBarIconBrightness: Brightness.light));
     return Scaffold(
       body: ModalProgressHUD(
         inAsyncCall: showSpinner,
         child: Stack(
           children: <Widget>[
-//              Container(
-//                height: double.infinity,
-//                width: double.infinity,
-//              ),
             Container(
               height: double.infinity,
               child: SingleChildScrollView(
@@ -233,7 +233,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       height: 10.0,
                     ),
                     _buildPasswordTF(),
-                    _buildForgotPasswordBtn(),
+                    _buildCreateAccAndForgotPasswordBtn(),
                     SizedBox(
                       height: 20.0,
                     ),

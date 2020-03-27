@@ -94,7 +94,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 Icons.lock,
                 color: Colors.white,
               ),
-              hintText: 'Enter your password again',
+              hintText: 'Verify password',
               hintStyle: kHintTextStyle,
             ),
             onChanged: (value) {
@@ -122,7 +122,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
     );
   }
 
-  Widget _buildLoginBtn() {
+  Widget _buildRegisterBtn() {
     return Container(
       //padding: EdgeInsets.symmetric(vertical: 25.0),
       width: double.infinity,
@@ -172,10 +172,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
         inAsyncCall: showSpinner,
         child: Stack(
           children: <Widget>[
-//              Container(
-//                height: double.infinity,
-//                width: double.infinity,
-//              ),
             Container(
               height: double.infinity,
               child: SingleChildScrollView(
@@ -217,7 +213,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     SizedBox(
                       height: 20.0,
                     ),
-                    _buildLoginBtn(),
+                    _buildRegisterBtn(),
                   ],
                 ),
               ),

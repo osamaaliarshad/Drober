@@ -5,7 +5,6 @@ Widget createOutfit() {
   String formatted = DateFormat('MMMEd').format(DateTime.now());
 
   return Column(
-    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
     children: <Widget>[
       Row(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -13,7 +12,6 @@ Widget createOutfit() {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 Text(
                   formatted,
@@ -34,26 +32,28 @@ Widget createOutfit() {
           ),
         ],
       ),
-      Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: <Widget>[
-          Expanded(
-            child: Card(
-              child: Image.asset(
-                'assets/hoodie_black.png',
-                // height: 200.0,
+      Expanded(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Expanded(
+              child: Card(
+                child: Image.asset(
+                  'assets/zip-up_hoodie.png',
+                  // height: 200.0,
+                ),
               ),
             ),
-          ),
-          Expanded(
-            child: Card(
-              child: Image.asset(
-                'assets/t-shirt_black.png',
-                //height: 200.0,
+            Expanded(
+              child: Card(
+                child: Image.asset(
+                  'assets/t-shirt_short_sleeves.png',
+                  //height: 200.0,
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
       Expanded(
         child: Row(
@@ -62,7 +62,7 @@ Widget createOutfit() {
             Expanded(
               child: Card(
                 child: Image.asset(
-                  'assets/jeans_black.png',
+                  'assets/jeans.png',
                   //height: 200.0,
                 ),
               ),
@@ -70,7 +70,7 @@ Widget createOutfit() {
             Expanded(
               child: Card(
                 child: Image.asset(
-                  'assets/slip-onsneaker_black.png',
+                  'assets/generic_sneakers.png',
                   //width: 200.0,
                 ),
               ),
