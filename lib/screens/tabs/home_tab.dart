@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:flutter_weather_icons/flutter_weather_icons.dart';
 
-Widget createOutfit() {
-  String formatted = DateFormat('MMMEd').format(DateTime.now());
+Widget createOutfits() {
+  String date = DateFormat('MMMEd').format(DateTime.now());
 
   return Scrollbar(
     child: Column(
@@ -21,7 +21,7 @@ Widget createOutfit() {
                   Column(
                     children: <Widget>[
                       Text(
-                        formatted,
+                        date,
                         style: TextStyle(
                           fontSize: 18.0,
                           //fontFamily: 'Baloo',
@@ -35,13 +35,11 @@ Widget createOutfit() {
             Column(
               children: <Widget>[
                 IconButton(
-                  onPressed: () {
-                    print('weather button pressed');
-                  },
+                  onPressed: () {},
                   icon: Icon(WeatherIcons.wiDaySunny),
                 ),
                 Text(
-                  '60° F',
+                  '',
                   style: TextStyle(
                     fontSize: 13.0,
                     //fontFamily: 'Baloo'
@@ -58,15 +56,22 @@ Widget createOutfit() {
               Expanded(
                 child: Card(
                   child: Image.asset(
-                    'assets/zip-up_hoodie.png',
+                    'assets/ClothingAssets/zip-up_hoodie.png',
                     // height: 200.0,
                   ),
                 ),
               ),
               Expanded(
                 child: Card(
-                  child: Image.asset(
-                    'assets/t-shirt_short_sleeves.png',
+                  child: Container(
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage(
+                            "assets/ClothingAssets/t-shirt_short_sleeves.png"),
+                        fit: BoxFit.cover,
+                        alignment: Alignment.topCenter,
+                      ),
+                    ),
                     //height: 200.0,
                   ),
                 ),
@@ -81,7 +86,7 @@ Widget createOutfit() {
               Expanded(
                 child: Card(
                   child: Image.asset(
-                    'assets/jeans.png',
+                    'assets/ClothingAssets/jeans.png',
                     //height: 200.0,
                   ),
                 ),
@@ -89,7 +94,7 @@ Widget createOutfit() {
               Expanded(
                 child: Card(
                   child: Image.asset(
-                    'assets/generic_sneakers.png',
+                    'assets/ClothingAssets/generic_sneakers.png',
                     //width: 200.0,
                   ),
                 ),

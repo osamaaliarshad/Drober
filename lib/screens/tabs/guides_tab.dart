@@ -29,7 +29,7 @@ Card createGuideCard(String style, String image) {
       child: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/$image"),
+            image: AssetImage("assets/GuidePage/$image"),
             fit: BoxFit.cover,
             alignment: Alignment.topCenter,
           ),

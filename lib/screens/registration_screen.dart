@@ -186,7 +186,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     Container(
                       alignment: Alignment.bottomCenter,
                       height: 150,
-                      child: Image.asset('assets/droberLogo17.png'),
+                      child: Image.asset('assets/Icons/droberLogo.png'),
                     ),
                     Container(
                       alignment: Alignment.topCenter,

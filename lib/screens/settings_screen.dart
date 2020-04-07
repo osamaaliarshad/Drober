@@ -33,10 +33,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   onTap: () async {
                     await _auth.signOut();
                     //FIX LOGOUT
-                    Navigator.popUntil(
-                      context,
-                      ModalRoute.withName(LoginScreen.id),
-                    );
+                    Navigator.pushReplacementNamed(context, LoginScreen.id);
+//                    Navigator.popUntil(
+//                      context,
+//                      ModalRoute.withName(LoginScreen.id),
+//                    );
                   },
                 ),
               ],

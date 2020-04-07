@@ -16,16 +16,8 @@ class _WardrobeScreenState extends State<WardrobeScreen> {
   FirebaseUser loggedInUser;
   int _currentIndex = 0;
 
-  final tabs = [
-    createOutfit(),
-    createCloset(),
-    createStyles(),
-    createGuide(),
-  ];
-
   @override
   void initState() {
-    // TODO: implement initState
     getCurrentUser();
     super.initState();
   }
@@ -41,6 +33,13 @@ class _WardrobeScreenState extends State<WardrobeScreen> {
       print(e);
     }
   }
+
+  final tabs = [
+    createOutfits(),
+    createCloset(),
+    createStyles(),
+    createGuide(),
+  ];
 
   @override
   Widget build(BuildContext context) {

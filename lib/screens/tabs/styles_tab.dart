@@ -34,7 +34,7 @@ Card createStyleCard(String style, String image) {
       child: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/$image"),
+            image: AssetImage("assets/StylePage/$image"),
             fit: BoxFit.cover,
             alignment: Alignment.topCenter,
           ),

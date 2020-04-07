@@ -9,7 +9,7 @@ Widget myFabButton = Container(
     elevation: 6.0,
     child: Tab(
       icon: Image.asset(
-        'assets/clothes.png',
+        'assets/Icons/clothes.png',
         height: 50.0,
       ),
     ),
